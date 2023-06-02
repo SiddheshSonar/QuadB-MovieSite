@@ -279,6 +279,7 @@ body {
   padding: 5px;
   border-radius: 50px;
   width: fit-content;
+  text-align: center;
 } 
 
 .modal-footer {
@@ -324,5 +325,11 @@ body {
   }
   .info-head {
     margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ips {
+    width: 130px;
   }
 }

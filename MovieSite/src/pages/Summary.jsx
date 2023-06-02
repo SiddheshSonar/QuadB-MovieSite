@@ -112,15 +112,15 @@ const Summary = ({ film }) => {
                                                 <div className='form-deets'>
                                                 <div className="form-group user-name">
                                                     <label htmlFor="name">Name:</label>
-                                                    <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
+                                                    <input className='ips' type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
                                                 </div>
                                                 <div className="form-group user-email">
                                                     <label htmlFor="email">Email:</label>
-                                                    <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                                                    <input className='ips' type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                                                 </div>
                                                 <div className="form-group user-phone">
                                                     <label htmlFor="phone">Phone:</label>
-                                                    <input type="tel" id="phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+                                                    <input className='ips' type="tel" id="phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
                                                 </div>
                                                 <div className="form-group user-seats">
                                                     <label htmlFor="seats">Number of Seats:</label>
