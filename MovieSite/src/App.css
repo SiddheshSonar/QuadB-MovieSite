@@ -279,6 +279,7 @@ body {
   padding: 5px;
   border-radius: 50px;
   width: fit-content;
+  text-align: center;
 } 
 
 .modal-footer {
