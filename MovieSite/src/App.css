@@ -286,10 +286,6 @@ body {
   margin-top: -1rem;
 }
 
-.ips {
-  width: 140px;
-}
-
 @media screen and (max-width: 991px) {
   .movie-section {
     justify-content: center;
@@ -329,5 +325,11 @@ body {
   }
   .info-head {
     margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ips {
+    width: 130px;
   }
 }
