@@ -1,25 +1,34 @@
-import * as React from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import App from '../App';
 
 function FilmCard({ film }) {
+
+  const handleClick = () => {
+    console.log(film)
+    localStorage.setItem('film', JSON.stringify(film));
+   window.location.href = `/${film.show.name}`; 
+  };
+
   return (
-    <Card className="film-card" sx={{ maxWidth: 345 }}>
+    <Card onClick={handleClick} className="film-card" sx={{ maxWidth: 345 }}>
       <CardMedia
         className='film-img'
         component="img"
         alt={film.show.name}
-        image={film.show.image.medium}
+        image={film.show.image.original}
       />
       <CardContent className='card-bottom'>
         <p className='show-name'>
           {film.show.name}
         </p>
-        <button className='btn film-btn'><InfoOutlinedIcon className='info-icon'/>More Info</button>
+        <button className='btn film-btn' onClick={handleClick}>
+          <InfoOutlinedIcon className='info-icon' />
+          More Info
+        </button>
       </CardContent>
     </Card>
   );

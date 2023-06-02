@@ -8,7 +8,11 @@ body {
 
 .nav-bar {
   background-color: #141414;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
+
 
 .movie-section {
   display: flex;
@@ -23,8 +27,8 @@ body {
 }
 
 .film-card {
-  width: 20rem;
-  height: 35rem;
+  width: 18rem;
+  height: 33rem;
   margin: 1rem;
   border-radius: 1.5rem !important;
   overflow: hidden;
@@ -40,11 +44,13 @@ body {
 }
 
 .film-img {
-  object-fit: contain;
   background-color: #141414;
+  max-height: 24rem;
+  object-fit: fill !important;
 }
 
 .card-bottom {
+  height: 10rem;
   font-size: 1.5rem;
   font-weight: 800;
   color: #fff;
@@ -77,4 +83,246 @@ body {
   font-family: 'Roboto', sans-serif !important;
   font-weight: 700;
   letter-spacing: 1.5px;
+}
+
+.summary-img {
+  /* margin: 1.5rem; */
+  width: 26rem;
+  height: 36rem;
+  object-fit: contain !important;
+}
+
+.summary-section {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.book-btn {
+  width: 10rem;
+  background-color: #E50914;
+  margin-top: 1rem;
+}
+
+.book-btn:hover {
+  transform: scale(1.05);
+  background-color: #E50914;
+  transition: ease-in-out 0.2s;
+  box-shadow: 0 0 0.5rem 0.1rem rgb(229, 9, 20);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.show-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.info-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-summary {
+  text-align: center;
+  font-weight: 300;
+}
+
+.info-foot {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-style: oblique;
+  font-size: 0.9rem;
+}
+
+.foot{
+  margin-top: -10px;
+  background-color: gray;
+  color: #000000;
+  border-radius: 2rem;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icon {
+  margin-right: 5px;
+  margin-bottom: 4px;
+}
+
+.star-icon {
+  margin-left: 2px;
+  margin-bottom: 4px;
+}
+
+.modal-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.modal-img {
+  width: 12rem;
+  height: 20rem;
+  object-fit: fill !important;
+}
+
+.book-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-left: 2.2rem;
+  margin-top: 0.4rem;
+}
+
+.book-foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -10px;
+  margin-top: 0.8rem;
+}
+
+.foot {
+  background-color: gray;
+  color: #000000;
+  padding: 5px;
+  width: fit-content;
+  font-size: 0.6rem;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.days, .time, .sched {
+  margin-top: -1.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.days, .time {
+  background-color: #141414;
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 0.1rem 0; 
+}
+
+.sched {
+  text-align: center;
+  margin-bottom: 0.1rem;
+}
+
+.book-deets {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.user-deets {
+  margin-top: 0.5rem;
+}
+
+.seat-size {
+  width: 40px;
+  text-align: center;
+}
+
+.form-deets {
+  margin-top: -0.5rem;
+}
+
+.deets-title {
+  font-weight: bold;
+}
+
+.user-amt {
+  margin: 0.5rem 0;
+  background-color: #141414;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 50px;
+  width: fit-content;
+} 
+
+.modal-footer {
+  margin-top: -1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .movie-section {
+    justify-content: center;
+    align-items: center;
+  }
+  .film-card {
+    width: 15rem;
+    height: 30rem;
+  }
+  
+  .film-img {
+    background-color: #141414;
+    max-height: 20rem;
+    object-fit: fill !important;
+  }
+
+  .summary-section {
+    margin: 2rem;
+  }
+
+  .summary-img {
+    width: 25rem;
+    height: 35rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .summary-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .summary-img {
+    width: 25rem;
+    height: 35rem;
+  }
+  .info-head {
+    margin-top: 1rem;
+  }
 }

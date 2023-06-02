@@ -21,9 +21,10 @@ const Home = () => {
         fetchData();
       }, []);
 
-      console.log(data)
+      // console.log(data)
       const filmBlocks = data?.map((film) => {
-        return <FilmCard film={film}/>
+        // console.log(film)
+        return <FilmCard film={film} key={film.show.id} />
       });
 
     return (
