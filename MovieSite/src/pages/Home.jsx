@@ -10,7 +10,7 @@ const Home = () => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch('https://api.tvmaze.com/search/shows?q=all');
+            const response = await fetch('https://api.tvmaze.com/search/shows?q=batman');
             console.log(response)
             const jsonData = await response.json();
             console.log(jsonData)
