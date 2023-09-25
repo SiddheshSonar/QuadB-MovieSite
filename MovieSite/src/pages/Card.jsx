@@ -19,7 +19,7 @@ function FilmCard({ film }) {
         className='film-img'
         component="img"
         alt={film.show.name}
-        image={film.show.image.original}
+        image={film.show.image && film.show.image.medium}
       />
       <CardContent className='card-bottom'>
         <p className='show-name'>

@@ -11,7 +11,9 @@ const Home = () => {
         const fetchData = async () => {
           try {
             const response = await fetch('https://api.tvmaze.com/search/shows?q=all');
+            console.log(response)
             const jsonData = await response.json();
+            console.log(jsonData)
             setData(jsonData);
             setIsLoading(false);
           } catch (error) {
