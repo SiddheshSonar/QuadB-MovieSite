@@ -15,7 +15,6 @@ const Summary = ({ film }) => {
     const content = film.show.summary;
     const genres = film.show.genres.join(', ');
     const [modal, setModal] = useState(false);
-    const toggle = () => setModal(!modal);
     const available = film.show.schedule.days.length > 0 && film.show.schedule.time.length > 0;
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -25,6 +24,15 @@ const Summary = ({ film }) => {
     const seatPrice = 100;
     const totalAmount = numSeats * seatPrice;
     const isFormValid = name && email && phone && numSeats && paymentMode;
+    const toggle = () => {
+        setModal(!modal)
+        // localStorage.setItem('bookingDetails', JSON.stringify({}));
+        setName('');
+        setEmail('');
+        setPhone('');
+        setNumSeats(1);
+        setPaymentMode('Cash');
+    };
 
     const incrementSeats = () => {
         setNumSeats(numSeats + 1);
