@@ -2,7 +2,7 @@
 
 ![FilmViews_logo](https://img.icons8.com/ios-filled/50/ffffff/movie-projector.png)
 
-FilmViews is a React.js web application that displays information about Batman shows using the TVMaze API. The application allows users to browse through a list of 10 Batman shows, view details about each show, and even book tickets for their favorite shows.
+FilmViews is a React.js web application that was developed as part of an internship assignment from QuadB Tech and displays information about Batman shows using the TVMaze API. The application allows users to browse through a list of 10 Batman shows, view details about each show, and even book tickets for their favorite shows.
 
 ## Table of Contents
 - [Features](#features)
